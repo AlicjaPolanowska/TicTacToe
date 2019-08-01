@@ -1,0 +1,35 @@
+.main {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-size:        medium;
+  background-color: #cce6ff;
+  min-height: -webkit-fill-available;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange {
+  width: 20em;
+  height: 7em;
+  border: dotted orange;
+  border-radius: 100px;
+  font-size: 115%;
+}
+
+.board-element {
+  width: 1em;
+  height: 1em;
+  border: grey dashed;
+  font-size: 1000%;
+  font-weight: bold;
+  padding: 0px;
+}

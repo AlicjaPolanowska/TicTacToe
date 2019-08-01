@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h5>{{ the_text }} {{ the_player }}</h5>
+
+<form method = 'POST' action='/game'>
+      <table class = 'board'>
+      
+      <tr><td><input class='board-element' name='0' value='{{ board[0] }}' type='SUBMIT'></td><td><input class='board-element' name='1' value='{{ board[1] }}' type='SUBMIT'></td><td><input class='board-element' name='2' value='{{ board[2] }}' type='SUBMIT'></td></tr>
+      <tr><td><input class='board-element' name='3' value='{{ board[3] }}' type='SUBMIT'></td><td><input class='board-element' name='4' value='{{ board[4] }}' type='SUBMIT'></td><td><input class='board-element' name='5' value='{{ board[5] }}' type='SUBMIT'></td></tr>
+      <tr><td><input class='board-element' name='6' value='{{ board[6] }}' type='SUBMIT'></td><td><input class='board-element' name='7' value='{{ board[7] }}' type='SUBMIT'></td><td><input class='board-element' name='8' value='{{ board[8] }}' type='SUBMIT'></td></tr>
+      
+      </table>
+</form>
+
+{% endblock %}

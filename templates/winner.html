@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>Congratulations!</h2>
+<h3>The winner is {{ the_winner }}</h3>
+
+<form method = 'GET' action='/newgame'>
+      <p>Wanna try again?</p>
+      <p><input class ='orange' value='REPLAY' type='SUBMIT'></p>
+</form>
+                  
+<form method = 'GET' action='/welcome'>
+      <p>Return to main page</p>
+      <p><input class ='orange' value='RETURN' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

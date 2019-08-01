@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>Strong opponent?</h2>
+
+<form method = 'GET' action='/newgame'>
+      <p>Why don't you try again?</p>
+      <p><input class ='orange' value='REPLAY' type='SUBMIT'></p>
+</form>
+                  
+<form method = 'GET' action='/welcome'>
+      <p>Return to main page</p>
+      <p><input class ='orange' value='RETURN' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

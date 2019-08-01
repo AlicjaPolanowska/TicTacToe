@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2> Welcome to the <i>Tic Tac Toe</i> game!</h2>
+
+<form method = 'GET' action='/newgame'>
+      <p>To start a game press PLAY button.</p>
+      <p><input class ='orange' value='PLAY' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
